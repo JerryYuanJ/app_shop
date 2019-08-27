@@ -6,9 +6,9 @@
 
 # 运行截图
 
-![首页](./screenshots/home.png)
+<image src="./screenshots/home.png" width="120" alt="首页"/>
 
-![个人中心](./screenshots/member.png)
+<image src="./screenshots/member.png" width="120" alt="个人中心"/>
 
 # 其它
 
