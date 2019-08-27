@@ -6,9 +6,10 @@
 
 # 运行截图
 
-<image src="./screenshots/home.png" width="120" alt="首页"/>
-
-<image src="./screenshots/member.png" width="120" alt="个人中心"/>
+<div>
+  <image src="./screenshots/home.png" width="180" alt="首页"/>
+  <image src="./screenshots/member.png" width="180" alt="个人中心"/>
+</div>
 
 # 其它
 
