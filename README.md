@@ -7,7 +7,8 @@
 # 运行截图
 
 <div>
-  <image src="./screenshots/home.png" width="180" alt="首页"/>
+  <image src="./screenshots/home.png" width="180" alt="首页" style="margin-right: 10px;"/>
+  <image src="./screenshots/category.png" width="180" alt="分类" style="margin-right: 10px;"/>
   <image src="./screenshots/member.png" width="180" alt="个人中心"/>
 </div>
 
