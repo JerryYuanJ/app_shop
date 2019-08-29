@@ -10,9 +10,8 @@ class GoodCard extends StatelessWidget {
         if (snapshot.hasData) {
           List goods = snapshot.data['data'];
           return Wrap(
-            spacing: 12.0,
+            alignment: WrapAlignment.spaceBetween,
             runSpacing: 8.0,
-            alignment: WrapAlignment.center,
             children: goods.map((good) {
               return SingleGoodCard(
                 image: good['url'],
@@ -38,7 +37,7 @@ class SingleGoodCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.45,
+      width: MediaQuery.of(context).size.width * 0.49,
       height: 260.0,
       padding: EdgeInsets.symmetric(horizontal: 8.0),
       decoration: BoxDecoration(
@@ -47,7 +46,11 @@ class SingleGoodCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Image.network(image),
+          // 图片占位
+          FadeInImage.assetNetwork(
+            placeholder: 'assets/images/image.png',
+            image: image
+          ),
           SizedBox(height: 4,),
           Text(name, maxLines: 2, overflow: TextOverflow.ellipsis,),
           SizedBox(height: 4,),
